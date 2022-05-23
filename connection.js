@@ -7,6 +7,6 @@ const mysql = require('mysql')
 //     password:''
 // })
 
-const dbConn = mysql.createConnection("mysql://b3f73dee5a53e7:d146d8d9@cleardb-tetrahedral-95578/heroku_1233b7754a473f4?reconnect=true")
+const dbConn = mysql.createConnection("mysql://b3f73dee5a53e7:d146d8d9@us-cdbr-east-05.cleardb.net/heroku_1233b7754a473f4?reconnect=true")
 
 module.exports = dbConn;
