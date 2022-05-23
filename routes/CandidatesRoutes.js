@@ -39,8 +39,10 @@ async function setCand(data){
         for(let i in positions){
             sum +=positions[i].votes
         }
-        for(let i in positions){
-            positions[i].percentage = ((positions[i].votes/sum)*100).toFixed(2)+"%";
+        if(sum>0){
+            for(let i in positions){
+                positions[i].percentage = ((positions[i].votes/sum)*100).toFixed(2)+"%";
+            }
         }
 
         for(let i in data){
