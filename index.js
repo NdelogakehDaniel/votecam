@@ -57,7 +57,7 @@ app.use("/voteid",voteid)
 // })
 
 app.get("/",(req,res)=>{
-    res.send("<h1>Welcome To VoteCam Backend !!!<br /> Lanunch the /create-table end point to create all your tables</h1>")
+    res.json({data: "Application is running successfully !!!"})
 })
 
 //route to create all database tables
