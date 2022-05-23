@@ -190,6 +190,6 @@ app.get("/create-tables",(req,res)=>{
 
 
 const port = process.env.PORT || 5003
-app.listen(port,()=>{
+app.listen(process.env.PORT || 5003,()=>{
     console.log(`listening on port ${port}`)
 })
